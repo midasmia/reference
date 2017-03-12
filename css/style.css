@@ -1,0 +1,56 @@
+/* ===format the style=== */
+html {
+    font-size: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ===导航栏样式=== */
+nav {
+    background-color: #488BF4;
+    height: 2.5rem;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/* ===icon样式=== */
+.icon {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon img {
+    margin-left: 50%;
+    margin-top: 1rem;
+    transform: translateX(-50%);
+    width: 5rem;
+}
+
+
+@media screen and (min-width: 640px) {
+/* ===导航栏样式=== */
+nav {
+    background-color: #488BF4;
+    height: 3.5rem;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/* ===icon样式=== */
+.icon {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon img {
+    margin-left: 50%;
+    margin-top: 1.5rem;
+    transform: translateX(-50%);
+    width: 7rem;
+}
+}
