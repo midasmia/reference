@@ -2,55 +2,173 @@
 html {
     font-size: 20px;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
-/* ===导航栏样式=== */
-nav {
-    background-color: #488BF4;
-    height: 2.5rem;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-
-/* ===icon样式=== */
-.icon {
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.icon img {
-    margin-left: 50%;
-    margin-top: 1rem;
-    transform: translateX(-50%);
-    width: 5rem;
-}
-
-
-@media screen and (min-width: 640px) {
-/* ===导航栏样式=== */
+@media screen and (max-width: 640px) {
+    /* ===导航栏样式=== */
 nav {
     background-color: #488BF4;
     height: 3.5rem;
     width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
+    display: flex;
+    /* ===设置flex box里的元素水平排列=== */
+    flex-direction: row;
+    /* ===设置flex box里的元素水平居中=== */
+    justify-content: space-between;
+    /* ===设置flex box里的元素垂直居中=== */
+    align-items: center;
 }
 
 /* ===icon样式=== */
 .icon {
-    margin-left: 50%;
-    transform: translateX(-50%);
+
 }
 
 .icon img {
-    margin-left: 50%;
-    margin-top: 1.5rem;
-    transform: translateX(-50%);
-    width: 7rem;
+    width: 5rem;
+    transform: translateY(1.5rem);
+    transition: all 0.3s ease;
+}
+
+/* ===鼠标放到icon的图片上时，图片网上偏移=== */
+.icon img:hover {
+    transform: translateY(0.8rem);
+    transition: all 0.3s ease;
+}
+
+/* ===联系我们=== */
+.contact-me {
+    width: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.contact-me p {
+    color: white;
+    font-size: 0.7rem;
+    transition: all 0.3s ease;
+}
+
+.contact-me img {
+    display: none;
+}
+
+.toggle-menu {
+    width: 5rem;
+    display: flex;
+
+    /* ===设置flex box里的元素水平排列=== */
+    flex-direction: row;
+
+    /* ===设置flex box里的元素右对齐=== */
+    justify-content: flex-end;
+
+    /* ===设置flex box里的元素垂直居中=== */
+    align-items: center;
+
+    padding-right: 1rem;
+}
+
+.toggle-menu img {
+    width: 1rem;
+}
+}
+
+
+/* ===屏幕宽度大于640px时的样式=== */
+@media screen and (min-width: 640px) {
+    /* ===导航栏样式=== */
+nav {
+    background-color: #488BF4;
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+
+    /* ===设置flex box里的元素水平排列=== */
+    flex-direction: row;
+
+    /* ===设置flex box里的元素水平居中=== */
+    justify-content: space-between;
+
+    /* ===设置flex box里的元素垂直居中=== */
+    align-items: center;
+}
+
+/* ===icon样式=== */
+.icon {
+
+}
+
+.icon img {
+    width: 5rem;
+    transform: translateY(1.5rem);
+    transition: all 0.3s ease;
+}
+
+/* ===鼠标放到icon的图片上时，图片网上偏移=== */
+.icon img:hover {
+    transform: translateY(0.8rem);
+    transition: all 0.3s ease;
+}
+
+/* ===联系我们=== */
+.contact-me {
+    width: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.contact-me p {
+    color: white;
+    font-size: 0.7rem;
+    transition: all 0.3s ease;
+}
+
+/* ===鼠标放置到‘联系我们’几个字时，‘联系我们’几个字放大1.2倍=== */
+.contact-me p:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.contact-me img {
+    width: 1.2rem;
+    height: 1.2rem;
+    padding-left: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+/* ===鼠标放置到‘联系我们’几个字旁边的图标时，图标放大1.2倍=== */
+.contact-me img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+/* ===导航栏右侧的按钮=== */
+.toggle-menu {
+    width: 8rem;
+    display: flex;
+
+    /* ===设置flex box里的元素水平排列=== */
+    flex-direction: row;
+    
+    /* ===设置flex box里的元素右对齐=== */
+    justify-content: flex-end;
+
+    /* ===设置flex box里的元素垂直居中=== */
+    align-items: center;
+
+    padding-right: 1rem;
+
+}
+
+.toggle-menu img {
+    width: 1rem;
 }
 }
