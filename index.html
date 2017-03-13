@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>皇室战争</title>
@@ -8,6 +9,7 @@
 </head>
 
 <body>
+    <!-- 导航栏 -->
     <nav>
         <div class="contact-me">
             <p>联系我们</p>
@@ -19,12 +21,27 @@
             <img src="https://cr.kunlun.com/uploaded-images/_232x109_crop_center-center_90/cr_logo_cn_simplied_bold_3.png?mtime=20160414103804,%20https://cr.kunlun.com/uploaded-images/_464x218_crop_center-center_90/cr_logo_cn_simplied_bold_3.png?mtime=20160414103804%202x">
         </a>
 
-        <div class="toggle-menu">
+        <div class="toggle-menu" id="menuButton">
             <img src="./images/bar.png" alt="">
         </div>
     </nav>
-    <script src="./script/script.js">
-
-    </script>
+    <!-- 菜单: 点击导航栏右侧按钮之后显示，初始为不显示 -->
+    <div class="menu" id="menu">
+        <img class="menu-icon" src="https://cr.kunlun.com/uploaded-images/_232x109_crop_center-center_90/cr_logo_cn_simplied_bold_3.png?mtime=20160414103804,%20https://cr.kunlun.com/uploaded-images/_464x218_crop_center-center_90/cr_logo_cn_simplied_bold_3.png?mtime=20160414103804%202x">
+        <img src="./images/x.png" alt="" class="menu-x" id="menuX">
+        <ul class="menu-info">
+            <li>
+                <a href="#">游戏简介</a>
+            </li>
+            <li>
+              <a href="#">常见问题</a>
+            </li>
+            <li>
+              <a href="#">官方论坛（英文）</a>
+            </li>
+        </ul>
+    </div>
+    <script src="./script/script.js"></script>
 </body>
+
 </html>
