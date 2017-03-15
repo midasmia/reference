@@ -79,7 +79,8 @@ html {
         position: fixed;
         top: 0;
         left: 110vw;
-        transition: all 0.1s ease;
+        transform: translate3d(0, 0, 0);
+        transition: all 0.3s ease;
     }
     /* ===菜单显示时的样式=== */
     .menu-active {
@@ -90,6 +91,7 @@ html {
         position: fixed;
         top: 0;
         left: 0;
+        transform: translate3d(0, 0, 0);
         transition: all 0.5s ease;
     }
     /* ===菜单中的按钮=== */
@@ -216,7 +218,8 @@ html {
         position: fixed;
         top: 0;
         left: 110vw;
-        transition: all 0.1s ease;
+        transform: translate3d(0, 0, 0);
+        transition: all 0.3s ease;
     }
     /* ===菜单显示时的样式=== */
     .menu-active {
@@ -227,6 +230,7 @@ html {
         position: fixed;
         top: 0;
         left: 0;
+        transform: translate3d(0, 0, 0);
         transition: all 0.5s ease;
     }
     /* ===菜单中的按钮=== */
