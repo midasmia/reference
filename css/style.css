@@ -33,11 +33,6 @@ html {
         transform: translateY(1.5rem);
         transition: all 0.3s ease;
     }
-    /* ===鼠标放到icon的图片上时，图片往上偏移=== */
-    .icon img:hover {
-        transform: translateY(0.8rem);
-        transition: all 0.3s ease;
-    }
     /* ===联系我们=== */
     .contact-me {
         width: 5rem;
