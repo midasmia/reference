@@ -178,6 +178,7 @@ nav {
         height: 1.2rem;
         padding-left: 0.5rem;
         transition: all 0.3s ease;
+        display: block;
     }
     /* ===鼠标放置到‘联系我们’几个字旁边的图标时，图标放大1.2倍=== */
     .contact-me img:hover {
