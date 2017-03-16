@@ -10,138 +10,150 @@ html {
 }
 
 
-/* ===屏幕宽度小于640px的样式=== */
+/* ===导航栏样式=== */
 
-@media screen and (max-width: 640px) {
-    /* ===导航栏样式=== */
-    nav {
-        background-color: #488BF4;
-        height: 3.5rem;
-        width: 100%;
-        display: flex;
-        /* ===设置flex box里的元素水平排列=== */
-        flex-direction: row;
-        /* ===设置flex box里的元素水平居中=== */
-        justify-content: space-between;
-        /* ===设置flex box里的元素垂直居中=== */
-        align-items: center;
-    }
-    /* ===icon样式=== */
-    .icon {}
-    .icon img {
-        width: 5rem;
-        transform: translateY(1.5rem);
-        transition: all 0.3s ease;
-    }
-    /* ===联系我们=== */
-    .contact-me {
-        width: 5rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 1rem;
-    }
-    .contact-me p {
-        color: white;
-        font-size: 0.7rem;
-        transition: all 0.3s ease;
-    }
-    .contact-me img {
-        display: none;
-    }
-    /* ===导航栏右侧的按钮=== */
-    .toggle-menu {
-        width: 5rem;
-        padding-right: 1rem;
-        display: flex;
-        /* ===设置flex box里的元素水平排列=== */
-        flex-direction: row;
-        /* ===设置flex box里的元素右对齐=== */
-        justify-content: flex-end;
-        /* ===设置flex box里的元素垂直居中=== */
-        align-items: center;
-    }
-    .toggle-menu img {
-        width: 1rem;
-    }
-    /* ===菜单样式=== */
-    /* ===菜单初始样式=== */
-    .menu {
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        opacity: 0.8;
-        position: fixed;
-        top: 0;
-        left: 110vw;
-        transform: translate3d(0, 0, 0);
-        transition: all 0.3s ease;
-    }
-    /* ===菜单显示时的样式=== */
-    .menu-active {
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        opacity: 0.8;
-        position: fixed;
-        top: 0;
-        left: 0;
-        transform: translate3d(0, 0, 0);
-        transition: all 0.5s ease;
-    }
-    /* ===菜单中的按钮=== */
-    .menu-icon {
-        width: 5rem;
-        margin-left: 50%;
-        transform: translateX(-50%);
-        margin-top: 2rem;
-    }
-    /* ===菜单中的列表信息=== */
-    .menu-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .menu-info li {
-        width: 90%;
-        padding: 1rem 0;
-        border-bottom: 1px solid #353535;
-    }
-    .menu-info li a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.2rem;
-        text-align: center;
-    }
-    /* ===菜单中的关闭按钮=== */
-    .menu-x {
-        position: absolute;
-        width: 1rem;
-        top: 1.5rem;
-        right: 1rem;
-    }
+nav {
+    background-color: #488BF4;
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    /* ===设置flex box里的元素水平排列=== */
+    flex-direction: row;
+    /* ===设置flex box里的元素水平居中=== */
+    justify-content: space-between;
+    /* ===设置flex box里的元素垂直居中=== */
+    align-items: center;
+}
+
+
+/* ===icon样式=== */
+
+.icon {}
+
+.icon img {
+    width: 5rem;
+    transform: translateY(1.5rem);
+    transition: all 0.3s ease;
+}
+
+
+/* ===联系我们=== */
+
+.contact-me {
+    width: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.contact-me p {
+    color: white;
+    font-size: 0.7rem;
+    transition: all 0.3s ease;
+}
+
+.contact-me img {
+    display: none;
+}
+
+
+/* ===导航栏右侧的按钮=== */
+
+.toggle-menu {
+    width: 5rem;
+    padding-right: 1rem;
+    display: flex;
+    /* ===设置flex box里的元素水平排列=== */
+    flex-direction: row;
+    /* ===设置flex box里的元素右对齐=== */
+    justify-content: flex-end;
+    /* ===设置flex box里的元素垂直居中=== */
+    align-items: center;
+}
+
+.toggle-menu img {
+    width: 1rem;
+}
+
+
+/* ===菜单初始样式=== */
+
+.menu {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 110vw;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+
+/* ===菜单显示时的样式=== */
+
+.menu-active {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.5s ease;
+}
+
+
+/* ===菜单中的按钮=== */
+
+.menu-icon {
+    width: 5rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+}
+
+
+/* ===菜单中的列表信息=== */
+
+.menu-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-info li {
+    width: 90%;
+    padding: 1rem 0;
+    border-bottom: 1px solid #353535;
+}
+
+.menu-info li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+/* ===菜单中的关闭按钮=== */
+
+.menu-x {
+    position: absolute;
+    width: 1rem;
+    top: 1.5rem;
+    right: 1rem;
 }
 
 
 /* ===屏幕宽度大于640px时的样式=== */
 
 @media screen and (min-width: 640px) {
-    /* ===导航栏样式=== */
-    nav {
-        background-color: #488BF4;
-        height: 3.5rem;
-        width: 100%;
-        display: flex;
-        /* ===设置flex box里的元素水平排列=== */
-        flex-direction: row;
-        /* ===设置flex box里的元素水平居中=== */
-        justify-content: space-between;
-        /* ===设置flex box里的元素垂直居中=== */
-        align-items: center;
-    }
     /* ===icon样式=== */
-    .icon {}
     .icon img {
         width: 8rem;
         transform: translateY(1.5rem);
@@ -155,15 +167,6 @@ html {
     /* ===联系我们=== */
     .contact-me {
         width: 8rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 1rem;
-    }
-    .contact-me p {
-        color: white;
-        font-size: 0.7rem;
-        transition: all 0.3s ease;
     }
     /* ===鼠标放置到‘联系我们’几个字时，‘联系我们’几个字放大1.2倍=== */
     .contact-me p:hover {
@@ -184,14 +187,6 @@ html {
     /* ===导航栏右侧的按钮=== */
     .toggle-menu {
         width: 8rem;
-        display: flex;
-        /* ===设置flex box里的元素水平排列=== */
-        flex-direction: row;
-        /* ===设置flex box里的元素右对齐=== */
-        justify-content: flex-end;
-        /* ===设置flex box里的元素垂直居中=== */
-        align-items: center;
-        padding-right: 1rem;
     }
     .toggle-menu img {
         width: 1.5rem;
@@ -203,55 +198,12 @@ html {
         transform: scale(1.2);
         transition: all 0.3s ease;
     }
-    /* ===菜单样式=== */
-    /* ===菜单初始样式=== */
-    .menu {
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        opacity: 0.8;
-        position: fixed;
-        top: 0;
-        left: 110vw;
-        transform: translate3d(0, 0, 0);
-        transition: all 0.3s ease;
-    }
-    /* ===菜单显示时的样式=== */
-    .menu-active {
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        opacity: 0.8;
-        position: fixed;
-        top: 0;
-        left: 0;
-        transform: translate3d(0, 0, 0);
-        transition: all 0.5s ease;
-    }
     /* ===菜单中的按钮=== */
     .menu-icon {
         width: 8rem;
+        margin-top: 1.2rem;
         margin-left: 50%;
         transform: translateX(-50%);
-        margin-top: 1.2rem;
-    }
-    /* ===菜单中的列表信息=== */
-    .menu-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .menu-info li {
-        width: 90%;
-        padding: 1rem 0;
-        border-bottom: 1px solid #353535;
-    }
-    .menu-info li a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.2rem;
-        text-align: center;
     }
     /* ===菜单中的关闭按钮=== */
     .menu-x {
